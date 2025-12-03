@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary-color: rgb(228, 19, 51) ;
+    --secundary-color: rgb(39, 37, 37) ;
+    --dark-primary-color: rgb(141, 21, 10) ;
+    --dark-secundary-color: #0d0d0f ;
+    --light-color: #fff;
+    --dark-color: #2c2c2c ;
+}
+
+body {
+    font-family: "arial";
+    color: var(--dark-color);
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.nav {
+    background-color: #fff;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow: 10px 0px 10px #ebebeb;
+    z-index: 1;
+}
+
+.nav .inner-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    margin-inline: auto;
+}
+
+.logo {
+    color: var(--primary-color)
+}
+
+.logo span {
+    color: var(--dark-color)
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+}
+
+.navs-icon-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navs-icon-container svg {
+    height: 1.5rem;
+}
+
+.navs-icon-container .shopping-cart {
+    position: relative;
+}
+
+.navs-icon-container .shopping-cart .products-count {
+    content: "";
+    position: absolute;
+    background-color: red;
+    width: 1rem;
+    height: 1rem;
+    bottom: -8px;
+    left: -8px;
+    border-radius: 50%;
+    color: #fff;
+    padding: 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-input-container {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    border-bottom: solid var(--dark-color);
+    margin-right: 1rem;
+}
+
+.search-input-container input {
+    border: none;
+    outline: none;
+}
+
+.search-input-container svg {
+    height: 1rem;
+    color: #808080;
+}
+
+nav ul li:hover {
+    transform: translateY(-2px);
+    transition: all 0.4s;
+}
+
+.menu-button{
+    display: none;
+}
