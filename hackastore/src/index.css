@@ -225,3 +225,68 @@ header .right-side img {
         display: none;
     }
 }
+
+/* main content */
+
+.page-inner-content {
+    max-width: 1280px;
+    margin-inline: auto;
+    padding-inline: 1rem;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 280px);
+    place-content: center;
+    gap: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.product {
+    padding: 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.btn-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.8rem;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.4s;
+}
+
+.btn-icon:hover {
+    background-color: var(--dark-primary-color);
+}
+
+.add-to-cart-btn {
+    background-color: var(--secundary-color);
+}
+
+.add-to-cart-btn:hover {
+    background-color: var(--dark-primary-color);
+}
+
+.section-title {
+    padding-bottom: 2rem;
+}
+
+.section-title h3 {
+    text-align: center;
+    margin-top: 4rem;
+}
