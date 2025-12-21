@@ -11,7 +11,7 @@ export default function Product({ id, image, name, rate, price }) {
       <p className="rate">&#9733; &#9733; &#9733; &#9733; </p>
       <p className="price">
         A partir de {price}
-        <span>R$</span>
+        <span> R$</span>
       </p>
       <div className="buttons">
         <Link to="/products/123/checkout" className="btn-icon">

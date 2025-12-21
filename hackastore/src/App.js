@@ -8,9 +8,10 @@ function App() {
   const [products, setProducts] = useState([]);
   useEffect(() => {
     fetch("./db.json")
-    .then((res) => res.json())
-    .then(data => setProducts(data.products))
-  });
+      .then((res) => res.json())
+      .then((data) => setProducts(data.products))
+      .catch((err) => console.error("Erro ao carregar produtos:", err));
+  }, []);
 
   return (
     <Router>
@@ -18,13 +19,13 @@ function App() {
         <Navbar />
         <main>
           <Header />
-          <div className="oage-inner-content">
+          <div className="page-inner-content">
             <div className="section-title">
               <h3>Serviços</h3>
               <div className="underline"></div>
             </div>
             <div className="main-content">
-              <ProductsList products={products}/>
+              <ProductsList products={products} />
             </div>
           </div>
         </main>

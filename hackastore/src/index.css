@@ -257,6 +257,23 @@ header .right-side img {
     margin-top: 0.5rem;
 }
 
+.product .name {
+    font-weight: bold;
+    margin-top: 0.4rem;
+}
+
+.product .price {
+    margin-top: 0.4rem;
+}
+
+.product .price span {
+    font-weight: bold;
+}
+
+.product .rate {
+    font-size: 1.3rem
+}
+
 .btn-icon {
     display: flex;
     justify-content: center;
@@ -284,9 +301,19 @@ header .right-side img {
 
 .section-title {
     padding-bottom: 2rem;
+    margin-top: 4rem;
 }
 
 .section-title h3 {
     text-align: center;
-    margin-top: 4rem;
+    font-size: 1.8rem;
 }
+
+.section-title .underline {
+    width: 150px;
+    height: 2px;
+    background-color: var(--dark-primary-color);
+    margin: 4px auto 0 auto;
+}
+
+/* product */

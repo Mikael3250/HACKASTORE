@@ -55,20 +55,6 @@
       "image": "/images/products/product-11.png",
       "rating": 4,
       "price": 80500
-    },
-    {
-      "id": 9,
-      "name": "Xbox Series X",
-      "image": "/images/products/product-12.png",
-      "rating": 5,
-      "price": 45000
-    },
-    {
-      "id": 10,
-      "name": "Racingwheel GT480 Ferrari",
-      "image": "/images/products/product-13.png",
-      "rating": 5,
-      "price": 14000
     }
   ]
 }
